@@ -45,8 +45,9 @@ const GlobeComponent = () => {
             )
             .backgroundColor("#282c34") // Background color
             .showAtmosphere(true) // Display atmosphere
-            .atmosphereColor("#3a228a") // Atmosphere color
-            .atmosphereAltitude(0.3) // Atmosphere altitude
+            // .atmosphereColor("#3a228a") // Atmosphere color
+            .atmosphereColor("#ffffff4d")
+            .atmosphereAltitude(0.2) // Atmosphere altitude
             .width(globeSize.width)
             .height(globeSize.height);
 

@@ -1,17 +1,17 @@
 import "../assets/styles/home.scss";
 import { useState, useContext } from "react";
 import SideBar from "../components/sidebar";
-// import Dashboard from "../components/dashboard";
-import GlobeComponent from "../components/GlobeComponent";
-import SatelliteOrbit from "../components/SatelliteOrbit";
+import Dashboard from "../components/dashboard";
+// import GlobeComponent from "../components/GlobeComponent";
+// import SatelliteOrbit from "../components/SatelliteOrbit";
 import { GlobeSizeContext } from "../context/globeSizeContext";
 
 function Home() {
     const [currentTab, setCurrentTab] = useState({
-        Dashboard: false,
+        Dashboard: true,
         Map: false,
         Satellite_list: false,
-        Earth: true,
+        Earth: false,
     });
     const { state } = useContext(GlobeSizeContext);
 
@@ -19,12 +19,7 @@ function Home() {
         <div className="home">
             <div className="home-container">
                 {state.showSideBar && <SideBar />}
-                {currentTab.Dashboard && <SatelliteOrbit />}
-                {currentTab.Earth && (
-                    <div className="earth-container">
-                        <GlobeComponent />
-                    </div>
-                )}
+                {currentTab.Dashboard && <Dashboard />}
             </div>
         </div>
     );

@@ -1,0 +1,44 @@
+.dashboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard-top_element {
+    display: flex;
+    margin-top: 16px;
+    gap: 20px;
+    .satellites {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        padding: 10px;
+        overflow-y: scroll;
+        font-size: 16px;
+        background-color: var(--primary-text-color);
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        h3,
+        p {
+            color: #fff;
+        }
+        p {
+            font-size: 14px;
+        }
+        .satellite {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}
+
+.dashboard-bottom_element {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
