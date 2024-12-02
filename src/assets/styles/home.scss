@@ -1,0 +1,14 @@
+.home {
+    .home-container {
+        height: 100dvh;
+        width: 100%;
+        display: flex;
+        .earth {
+            margin-left: 280px;
+        }
+        .earth-container {
+            width: 400px;
+            height: 400px;
+        }
+    }
+}

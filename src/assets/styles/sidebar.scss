@@ -1,0 +1,93 @@
+// https://app.uizard.io/templates/XXpeaOpYpacqZbePVymJ/fullscreen
+
+.sidebar {
+    position:fixed;
+    width: 246px;
+    height: 100%;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    &::before {
+        content: "x";
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 30px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border-radius: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+    }
+}
+
+.sidebar-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .sidebar-header {
+        width: 100%;
+        .header {
+            padding: 50px 40px 20px;
+            font-size: 28px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+    }
+}
+
+.sidebar-tabs-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .sidebar-tabs {
+        .sidebar-tab {
+            padding: 14px 40px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all ease-in 0.1s;
+            .tab-name {
+                padding: 0 14px;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--primary-p-color-h-o);
+            }
+            .icon-svg {
+                width: 16px;
+                height: 24px;
+                object-fit: contain;
+                fill: #55595f;
+            }
+            .satellite-icon {
+                transform: scaleX(-1);
+            }
+            &.active {
+                background-color: var(--primary-text-color);
+                .icon-svg {
+                    fill: #f8f9fa;
+                }
+                .tab-name {
+                    color: #f8f9fa;
+                }
+            }
+            &:hover {
+                // background-color: #d3d3d3;
+                background-color: var(--primary-hover-color);
+                &.active {
+                    background-color: var(--primary-text-color);
+                    .icon-svg {
+                        fill: #f8f9fa;
+                    }
+                    .tab-name {
+                        color: #f8f9fa;
+                    }
+                }
+            }
+        }
+    }
+}
