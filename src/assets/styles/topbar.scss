@@ -1,0 +1,56 @@
+.topbar {
+    height: 120px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar-container {
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        color: var(--primary-text-color);
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .topbar-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .user-icon-wrapper {
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid var(--primary-text-color);
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
+        .user-icon {
+            height: 36px;
+            width: 36px;
+            margin-top: 5px;
+            fill: var(--primary-text-color);
+        }
+    }
+    .user-name-wrapper {
+        margin-left: 12px;
+        cursor: pointer;
+        span {
+            color: var(--primary-text-color);
+            font-weight: 500;
+        }
+    }
+
+    .bell-icon {
+        margin-left: 20px;
+        fill: var(--primary-text-color);
+        cursor: pointer;
+    }
+}

@@ -45,17 +45,17 @@ const GlobeComponent = () => {
             )
             .backgroundColor("#282c34") // Background color
             .showAtmosphere(true) // Display atmosphere
-            // .atmosphereColor("#3a228a") // Atmosphere color
-            .atmosphereColor("#ffffff4d")
-            .atmosphereAltitude(0.2) // Atmosphere altitude
+            .atmosphereColor("#3a228a") // Atmosphere color
+            // .atmosphereColor("#ffffff4d")
+            .atmosphereAltitude(0.3) // Atmosphere altitude
             .width(globeSize.width)
             .height(globeSize.height);
 
         // Locations
         const locations = [
             {
-                lat: 21.0285,
-                lng: 105.8542,
+                lat: 21.0378,
+                lng: 105.7764,
                 size: 0.1,
                 color: "red",
                 label: "Hanoi",
@@ -78,7 +78,7 @@ const GlobeComponent = () => {
           `
             );
         // Coverage radius
-        const radiusKm = 1000; // 1000Km
+        const radiusKm = 2000; // 1000Km
 
         // Generate circle
         const circlePoints = generateCircle(

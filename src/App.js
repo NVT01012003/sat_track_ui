@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Dashboard from "./components/dashboard";
 import GlobeComponent from "./components/GlobeComponent";
 import SatelliteOrbit from "./components/SatelliteOrbit";
+import BarChart from "./components/chart";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/globe" element={<GlobeComponent />} />
                     <Route path="/orbit" element={<SatelliteOrbit />} />
+                    <Route path="/chart" element={<BarChart />} />
                 </Routes>
             </BrowserRouter>
         </div>
